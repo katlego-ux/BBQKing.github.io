@@ -3,27 +3,26 @@
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <meta name="description" content="Start your development with FoodHut landing page.">
+    <meta name="author" content="Devcrud">
     <title>BBQKing</title>
    <link rel="icon" href="icon.png">
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
 
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-    <link rel="stylesheet" href="themify-icons.css">
-
-    <link rel="stylesheet" href="animate.css">
-   
+    <link rel="stylesheet" href="assets/vendors/animate/animate.css">
+    <!-- menu-->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Satisfy|Bree+Serif|Candal|PT+Sans">
-    <link rel="stylesheet" type="text/css" href="font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../public_html/assets/css/font-awesome.min.css">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../public_html/assets/css/style.css">
   
-	<link rel="stylesheet" href="bbqking.css">
-  
+    <!-- Bootstrap + FoodHut main styles -->
+	<link rel="stylesheet" href="assets/css/foodhut.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     
-
+    <!-- Navbar -->
     <nav class="custom-navbar navbar navbar-expand-lg navbar-dark fixed-top" data-spy="affix" data-offset-top="10">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -47,7 +46,7 @@
                 </li>
             </ul>
             <a class="navbar-brand m-auto" href="#">
-                <img src="logo.png" class="brand-img" alt="">
+                <img src="assets/imgs/logo.png" class="brand-img" alt="">
                 <span class="brand-txt">BBQKing</span>
             </a>
             <ul class="navbar-nav">
@@ -59,7 +58,13 @@
         </div>
     </nav>
     <!-- header -->
-    <header id="home" class="header" style="background: url(home.jpg); background-repeat: no-repeat; background-size: cover;">
+    <header id="home" class="header" style="background: url(../home.jpg); background-repeat: no-repeat; height: 50vh;
+    max-height: 500px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 650px;">
                 <div class="overlay text-white text-center">
             <h1 class="display-2 font-weight-bold my-3">BBQ King</h1>
             <h2 class="display-4 mb-5">You host We roast</h2>
@@ -70,7 +75,7 @@
     <!--  About Section  -->
     <div id="about" class="container-fluid wow fadeIn" id="about"data-wow-duration="1.5s">
         <div class="row">
-            <div style="background-image: url(icon.png); width: 350px;" class="col-lg-6 has-img-bg" ></div>
+            <div style="background-image: url(../icon.png); width: 350px;" class="col-lg-6 has-img-bg" ></div>
             <div class="col-lg-6">
                 <div class="row justify-content-center">
                     <div class="col-sm-8 py-5 my-5">
@@ -108,7 +113,7 @@
           <div class="breakfast menu-restaurant">
             <span class="clearfix">
               <a class="menu-title" data-meal-img="assets/img/restaurant/rib.jpg">Full lamb on spit</a>
-              <span style="left: 50px; right: 44px;" class="menu-line"></span>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
               <span class="menu-price">R149 p/p</span>
             </span>
             <span class="menu-subtitle">500g meat per person</span>
@@ -126,7 +131,7 @@
           <div class="breakfast menu-restaurant">
             <span class="clearfix">
               <a class="menu-title" data-meal-img="assets/img/restaurant/rib.jpg">Roast chicken</a>
-              <span style="left: 100px; right: 20px;" class="menu-line"></span>
+              <span style="left: 166px; right: 44px;" class="menu-line"></span>
               <span class="menu-price">R35 p/p</span>
             </span>
             <span class="menu-subtitle">1/4 chicken leg per person</span>
@@ -184,7 +189,7 @@
 
           <div class="dinner menu-restaurant">
             <span class="clearfix">
-              <a class="menu-title"  data-meal-img="assets/img/restaurant/rib.jpg">Cheesy garlic roll</a>
+              <a class="menu-title"  data-meal-img="assets/img/restaurant/rib.jpg">Cheesy garlic bread</a>
               <span style="left: 166px; right: 44px;" class="menu-line"></span>
               <span class="menu-price">R15 p/p</span>
             </span>
@@ -252,7 +257,7 @@
 
     <div class="dinner menu-restaurant">
       <span class="clearfix">
-        <a class="menu-title" data-meal-img="assets/img/restaurant/rib.jpg">Potato salad</a>
+        <a class="menu-title" data-meal-img="assets/img/restaurant/rib.jpg">Creamy potato salad</a>
         <span style="left: 166px; right: 44px;" class="menu-line"></span>
         <span class="menu-price">R20 p/p</span>
       </span>
@@ -276,7 +281,7 @@
     </span>
   </div>
 </div>
-<a  style="margin-top: 30px;" href="Menu.pdf" class="btn btn-lg btn-primary" id="rounded-btn">Click to download our menu</a>
+<a href="../public_html/Menu.pdf" class="btn btn-lg btn-primary" id="rounded-btn">Click to download our menu</a>
 
 
 
@@ -293,51 +298,54 @@
     </div>
     <div class="gallary row">
         <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
-            <img src="1.jpg" class="gallary-img">
+            <img src="../q/1.jpg" class="gallary-img">
         
         </div>
         <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
-            <img src="2.jpg" class="gallary-img">
+            <img src="../q/2.jpg" class="gallary-img">
             
         </div>
         <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
-            <img src="3.jpg" class="gallary-img">
+            <img src="../q/3.jpg" class="gallary-img">
            
         </div>
         <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
-            <img src="5.jpg" class="gallary-img">
+            <img src="../q/5.jpg" class="gallary-img">
             
         </div>
         
         <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
-            <img src="IMG_20221003_154013.jpg" class="gallary-img">
-            
-        </div>
-        
-        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
-            <img src="IMG_20221004_114033.jpg" class="gallary-img">
+            <img src="../q/IMG_20221003_154013.jpg" class="gallary-img">
             
         </div>
         <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
-            <img src="IMG_20221004_114311.jpg" class="gallary-img">
+            <img src="../q/IMG_20221004_101905.jpg" class="gallary-img">
+            
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="../q/IMG_20221004_114033.jpg" class="gallary-img">
+            
+        </div>
+        <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
+            <img src="../q/IMG_20221004_114311.jpg" class="gallary-img">
            
         </div>
         <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
-            <img src="IMG_20221208_191816.jpg" class="gallary-img">
+            <img src="../q/IMG_20221208_191816.jpg" class="gallary-img">
             
         </div>
         <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
-            <img src="IMG_20221208_191852.jpg" class="gallary-img">
+            <img src="../q/IMG_20221208_191852.jpg" class="gallary-img">
             
         </div>
         <div class="col-sm-6 col-lg-3 gallary-item wow fadeIn">
-            <img src="IMG_20221208_192015.jpg" class="gallary-img">
+            <img src="../q/IMG_20221208_192015.jpg" class="gallary-img">
            
         </div>
     </div>
 
     <!-- book a table Section  -->
-    <div style="background-image: url(aboutback.jpg);"  class="container-fluid has-bg-overlay text-center text-light has-height-lg middle-items" id="book-table">
+    <div style="background-image: url(../public_html/assets/imgs/aboutback.jpg);"  class="container-fluid has-bg-overlay text-center text-light has-height-lg middle-items" id="book-table">
         <div class="">
             <h2 class="section-title mb-5">BOOK US</h2>
             <div class="row mb-5">
@@ -354,7 +362,7 @@
                     <input type="date" id="booktable" class="form-control form-control-lg custom-form-control" placeholder="12/12/12">
                 </div>
             </div>
-            <a href="https://wa.me/qr/RH3IV3IYI7MXG1" class="btn btn-lg btn-primary" id="rounded-btn">Click to Book</a>
+            <a href="https://wa.me/qr/VOV5JYNYWHOGA1" class="btn btn-lg btn-primary" id="rounded-btn">Click to Book</a>
         </div>
     </div>
 
@@ -364,29 +372,41 @@
     <div id="contact" class="container-fluid bg-dark text-light border-top wow fadeIn">
         <div class="row">
             <div class="col-md-6 px-0">
-                <div id="map" style="width: 70%; height: 100%; min-height: 400px">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.2221978358057!2d28.269727814849194!3d-25.73016458365096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95603cf25b11ed%3A0x71f1f4d638962111!2s168%20Hartley%20St%2C%20Weavind%20Park%2C%20Pretoria%2C%200184!5e0!3m2!1sen!2sza!4v1671122544171!5m2!1sen!2sza" width="600" height="450" style="border:0; margin-left: 50px;margin-top: 90px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+                <div id="map" style="width: 50%; height: 100%; min-height: 400px">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.11061568767!2d28.374800500000003!3d-25.8329001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e955c8c25ba0e3b%3A0x61c9e33abdf7b70c!2sZwavelpoort%20St%2C%20Pretoria!5e0!3m2!1sen!2sza!4v1671093012526!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
             <div class="col-md-6 px-5 has-height-lg middle-items">
                 <h3>Contact Us</h3>
                 <p>You can get in contact with us for any enquires </p>
                 <div class="text-muted">
-                    <p><i class="fa fa-map-marker"></i> <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.2221978358057!2d28.269727814849194!3d-25.73016458365096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e95603cf25b11ed%3A0x71f1f4d638962111!2s168%20Hartley%20St%2C%20Weavind%20Park%2C%20Pretoria%2C%200184!5e0!3m2!1sen!2sza!4v1671122544171!5m2!1sen!2sza">168 Hartley St<br> Weavind Park<br> Pretoria<br> 0184</a>
-                    </p>
-                 <p><i class="fa fa-phone"></i><a href="tel:+27826344810">(082) 634 4810</a> </p>
-                    <p><i class="fa fa-envelope"></i><a href="mailto:mobilebraai@gmail.com"> mobilebraai@gmail.com</a></p>
+                    <p><span class="ti-location-pin pr-3"></span> No.1 Kliphuis <br> Zwavelpoort<br>Pretoria</p>
+                    <p><span class="ti-support pr-3"></span><a href="tel:+27826344810">(082) 634 4810</a> </p>
+                    <p><span class="ti-email pr-3"></span><a href="mailto:mobilebraai@gmail.com"> mobilebraai@gmail.com</a></p>
                 </div>
             </div>
         </div>
     </div>
 
-    
+    <!-- page footer  -->
+  
     <div class="bg-dark text-light text-center border-top wow fadeIn">
         <p class="mb-0 py-3 text-muted small">&copy; Copyright <script>document.write(new Date().getFullYear())</script> Proudly made by MbaliDev</p>
     </div>
+    <!-- end of page footer -->
+
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- wow.js -->
+    <script src="assets/vendors/wow/wow.js"></script>
     
-    <script src="BBQKING.js"></script>
+    <!-- FoodHut js -->
+    <script src="assets/js/foodhut.js"></script>
 
 </body>
 </html>
