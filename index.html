@@ -345,7 +345,7 @@
 
     <!-- book a table Section  -->
     <div style="background-image: url(aboutback.jpg);"  class="container-fluid has-bg-overlay text-center text-light has-height-lg middle-items" id="book-table">
-        <div class="">
+        <form action="mailto:booking@thebraaiking.co.za" method="post" enctype="multipart/form-data" name="EmailForm">
             <h2 class="section-title mb-5">BOOK US</h2>
             <div class="row mb-5">
                 <div class="col-sm-6 col-md-3 col-xs-12 my-2">
@@ -361,10 +361,11 @@
                     <input type="date" id="booktable" class="form-control form-control-lg custom-form-control" placeholder="12/12/12">
                 </div>
             </div>
-            <a href="mailto:booking@thebraaiking.co.za" class="btn btn-lg btn-primary" id="rounded-btn">Click to Book</a>
-        </div>
-    </div>
+            <button type="submit" value="submit" class="btn btn-lg btn-primary" id="rounded-btn">Click to Book</button>
 
+        </div>
+      </form>
+    </div>
   
 
     <!-- CONTACT Section  -->
