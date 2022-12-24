@@ -7,6 +7,12 @@ $email = $_POST['name'];
  $time =$_POST['time'];
  $date = $_POST['date'];  
 
+ if(empty($email)){ echo "Email is mandatory";
+exit;
+}
+
+ 
+
  $mailTo ='booking@thebraaiking.co.za';
 
  $subject ='New booking recieved' .$email;
