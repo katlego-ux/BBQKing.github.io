@@ -63,7 +63,7 @@
     position: relative;
   }
   
-  .menu .menu-content::after {
+  .menu .menu-content::after {margin-left: 50px; 
     position: absolute;
     left: 10px;
     right: 0;
